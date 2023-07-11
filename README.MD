@@ -2,6 +2,11 @@
 
 A Python script for observing celestial bodies and plotting their positions using astronomical coordinates.
 
+### v0.2 - Stars and Constelations
+
+- Added the calculation osf the positions of the planets of the Solar System, stars and draw the constelations
+- Need to change the values from RaDec to AltAz to better position on a point of observation
+
 ## Overview
 
 The Sky Observation Tool is a Python script that utilizes the skyfield and matplot libraries to calculate and plot the positions of celestial bodies. It allows you to specify a date, time, and geographic location to observe the sky from and provides the altitude and azimuth values for various celestial objects.
@@ -12,6 +17,7 @@ The Sky Observation Tool is a Python script that utilizes the skyfield and matpl
 - Support for a wide range of celestial objects, including planets, stars, and the Moon
 - Plot the positions of celestial objects on a polar coordinate system
 - Customizable plot with labeled markers for each celestial object
+- Draw stars and constelations
 
 ## Prerequisites
 
