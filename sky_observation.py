@@ -78,8 +78,8 @@ edges = [edge for name, edges in constellations for edge in edges]
 edges_star1 = [star1 for star1, star2 in edges]
 edges_star2 = [star2 for star1, star2 in edges]
 
-degrees = 0.0
-center = observer.at(t).from_altaz(alt_degrees=90, az_degrees=degrees)
+alt, az, _ = observer_on_earth.at(t).altaz()
+center = observer.at(t).from_altaz(alt_degrees=alt.degrees, az_degrees=az.degrees)
 projection = build_stereographic_projection(center)
 
 star_positions = observer_on_earth.at(t).observe(Star.from_dataframe(stars))
