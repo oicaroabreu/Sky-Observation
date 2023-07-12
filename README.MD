@@ -2,20 +2,21 @@
 
 A Python script for observing celestial bodies and plotting their positions using astronomical coordinates.
 
-### v0.2 - Stars and Constelations
+### v0.2.1 - Stars and Constelations
 
 - Added the calculation osf the positions of the planets of the Solar System, stars and draw the constelations
-- Need to change the values from RaDec to AltAz to better position on a point of observation
+- Pick the constellations by it's IAU Constellation Name (https://www.iau.org/public/themes/constellations/)
+- Plot of a Galatic Frame
 
 ## Overview
 
-The Sky Observation Tool is a Python script that utilizes the skyfield and matplot libraries to calculate and plot the positions of celestial bodies. It allows you to specify a date, time, and geographic location to observe the sky from and provides the altitude and azimuth values for various celestial objects.
+The Sky Observation Tool is a Python script that utilizes the skyfield and matplot libraries to calculate and plot the positions of celestial bodies. It allows you to specify a date, time, and geographic location to observe the sky from and provides the Right Ascention and Declination values for various celestial objects.
 
 ## Features
 
-- Calculate the altitude and azimuth of celestial bodies at a given date, time, and location
+- Calculate the ra and dec of celestial bodies at a given date, time, and location
 - Support for a wide range of celestial objects, including planets, stars, and the Moon
-- Plot the positions of celestial objects on a polar coordinate system
+- Plot the positions of celestial objects on a galatic coordinate system
 - Customizable plot with labeled markers for each celestial object
 - Draw stars and constelations
 
@@ -37,7 +38,7 @@ The Sky Observation Tool is a Python script that utilizes the skyfield and matpl
 
 5. python sky_observation.py
 
-6. The script will calculate the altitude and azimuth values for the specified celestial objects and plot them on a polar coordinate system.
+6. The script will calculate the ra and dec values for the specified celestial objects and plot them on a galatic coordinate system.
 
 ## Example
 
