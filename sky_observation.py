@@ -89,6 +89,10 @@ projection = build_stereographic_projection(center)
 
 star_positions = observer_on_earth.at(t).observe(Star.from_dataframe(stars))
 
+"""
+Plot Galatic Map
+"""
+
 limiting_magnitude = 4.40
 
 bright_stars = (stars.magnitude <= limiting_magnitude)
